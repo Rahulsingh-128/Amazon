@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+</head>
+<body>
+  <script>
+    const words = ['apple','grape','apple','apple'];
+   const obj ={
+    apple:0,
+    grape:0
+   }
+    countWords(words)
+    console.log(obj);
+
+    function countWords(arr){
+      for(let i=0;i<arr.length;i++){
+       obj[arr[i]]++;
+      }
+    }
+  </script>
+</body>
+</html>

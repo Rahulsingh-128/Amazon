@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="js-title"></title>
+</head>
+<body>
+  <button onclick="add()" >
+    Add
+  </button>
+  <button onclick="remove()" >
+    Remove
+  </button>
+  <p class="js-btn"></p>
+  <script>
+    let count=0;
+    setTitle();
+    function setTitle(){
+      setInterval(()=>{
+      finish()
+      },1000)
+    }
+    function finish(){
+      document.querySelector('.js-title').innerText=`(${count}) New messages`;
+    }
+    function add(){
+      count++;
+    }
+    function remove(){
+      count--;
+    }
+  </script>
+</body>
+</html>

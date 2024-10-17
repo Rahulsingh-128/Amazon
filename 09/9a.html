@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input placeholder="Type something" class="js-input" onkeyup="func()">
+  <p class="js-para"></p>
+  <script>
+    function func(){
+      console.log("inside");
+      console.log(document.querySelector('.js-input').value)
+      document.querySelector('.js-para').innerHTML=document.querySelector('.js-input').value;
+    }
+  </script>
+</body>
+</html>
